@@ -17,7 +17,7 @@ public class OrderController {
     @PostMapping
     public Order addOrder(@RequestBody Order order){
         Order save = repository.save(order);
-        System.out.println("order = " + save);
+        System.out.println("order : " + save);
         return save;
     }
 
